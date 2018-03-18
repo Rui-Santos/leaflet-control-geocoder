@@ -1,7 +1,7 @@
-import L from 'leaflet';
-import { template, getJSON } from '../util';
+var L = require('leaflet'),
+	Util = require('../util');
 
-export default {
+module.exports = {
   class: L.Class.extend({
     options: {
       serviceUrl: 'https://nominatim.openstreetmap.org/',
