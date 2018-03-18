@@ -11,9 +11,9 @@ export default {
         var a = r.address,
           parts = [];
         if (a.station) {
-					parts.push('{station}');
-				}
-        
+          parts.push('{station}');
+        }
+
         if (a.road || a.building) {
           parts.push('{building} {road} {house_number}');
         }
@@ -72,10 +72,10 @@ export default {
         }, this)
       );
     },
-    
-		suggest: function(query, cb, context) {
-			return this.geocode(query, cb, context);
-		},
+
+    suggest: function(query, cb, context) {
+      return this.geocode(query, cb, context);
+    },
 
     reverse: function(location, scale, cb, context) {
       getJSON(
